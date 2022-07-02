@@ -73,3 +73,5 @@ body.main-bg::after { content: ''; background: url("../images/rikky.png") no-rep
 .timeline-nav .nav-link.active::before { width: 31px; height: 31px; background-color: rgba(0, 198, 255, 0.2); border: 1px solid var(--color-primary); }
 
 .timeline-nav .nav-link.active::after { background: var(--grad-primary); }
+
+/*# sourceMappingURL=main.css.map */
