@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+:root { --color-primary:   #00c6ff; --color-secondary: #9733EE; --color-grey:      #A9B5CD; --grad-primary: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); --radial-black: radial-gradient(100% 197.75% at 0% 0%, #243B55 0%, #141E30 62.35%, #141E30 62.36%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */; }
+
+body { margin: 0; font-family: 'Poppins', sans-serif; font-weight: 300; color: white; background: var(--radial-black); min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
+
+body::before { content: ''; background: url("../images/logo.svg") no-repeat -30%; background-size: auto 150%; opacity: 5%; position: absolute; inset: 0; z-index: -1; }
+
+body.main-bg::after { content: ''; background: url("../images/rikky.png") no-repeat bottom; background-size: 100%; position: absolute; bottom: 0; right: 0; width: 40%; height: 100%; z-index: -1; }
+
+.container, .container-fluid { position: inherit; padding: 0 30px; }
+
+.navbar { padding-top: 3rem; z-index: 1000; }
+
+.navbar .nav-link { color: white; font-weight: 700; font-size: 20px; transition: all 0.3s ease-in-out; }
+
+.navbar .nav-link:hover { color: var(--color-primary); }
+
+.nav-skills { font-weight: 700; }
+
+.nav-skills-title { font-size: 20px; padding: var(--bs-nav-link-padding-y) 0; color: var(--color-grey); }
+
+.nav-skills-title::after { content: ''; display: block; width: 2px; height: 50px; background: var(--color-grey); margin-top: var(--bs-nav-link-padding-y); }
+
+.nav-skills-item { font-size: 24px; padding: var(--bs-nav-link-padding-y) 0; color: var(--color-grey); letter-spacing: 1; }
+
+.nav-skills-item:hover { color: var(--color-primary); }
+
+.nav-skills-item.active { font-size: 50px; color: white; }
+
+.text-xxl { font-size: 80px; }
+
+.text-lg { font-size: 30px; }
+
+.text-md { font-size: 18px; }
+
+.text-primary { color: var(--color-primary); }
+
+.text-secondary { color: var(--color-secondary); }
+
+.text-grey { color: var(--color-grey); }
+
+.text-white { color: #FFF; }
+
+.headline { font-weight: 700; line-height: 80px; color: #FFFFFF; margin-bottom: 30px; }
+
+.sub-headline { font-size: 30px; font-weight: 300; color: var(--color-grey); margin-bottom: 50px; }
+
+.btn-primary { padding: 15px 50px; background-color: var(--color-primary); background: var(--grad-primary); font-size: 20px; font-weight: 500; border-radius: 50px; cursor: pointer; background-size: 200% 200%; }
+
+.btn-primary:hover { animation: gradient 1s ease both; }
+
+@keyframes gradient { 0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; } }
+
+.timeline-nav .nav-item + .nav-item { margin-top: 30px; }
+
+.timeline-nav .nav-link { color: var(--color-grey); font-size: 14px; position: relative; transition: all 0.1s ease-in-out; }
+
+.timeline-nav .nav-link::before, .timeline-nav .nav-link::after { content: ''; position: absolute; top: 50%; transform: translate(50%, -50%); border-radius: 15px; display: block; }
+
+.timeline-nav .nav-link::after { left: -28px; width: 15px; height: 15px; background: white; }
+
+.timeline-nav .nav-link:before { left: -44px; }
+
+.timeline-nav .nav-link:hover { font-size: 18px; color: var(--color-primary); }
+
+.timeline-nav .nav-link:hover::after { background: var(--color-primary); }
+
+.timeline-nav .nav-link.active { color: white; font-size: 18px; font-weight: 700; }
+
+.timeline-nav .nav-link.active::before { width: 31px; height: 31px; background-color: rgba(0, 198, 255, 0.2); border: 1px solid var(--color-primary); }
+
+.timeline-nav .nav-link.active::after { background: var(--grad-primary); }
+
+/*# sourceMappingURL=main.css.map */
