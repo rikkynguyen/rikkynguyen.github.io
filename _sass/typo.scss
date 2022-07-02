@@ -41,3 +41,27 @@
   color: var(--color-grey);
   margin-bottom: 50px;
 }
+
+@media (max-width: 767.98px) {
+  .text {
+    &-xxl {
+      font-size: 50px;
+    }
+
+    &-lg {
+      font-size: 24px;
+    }
+
+    &-md {
+      font-size: 16px;
+    }
+  }
+
+  .headline {
+    line-height: 1;
+  }
+
+  .sub-headline {
+    font-size: 24px;
+  }
+}

@@ -7,11 +7,11 @@ body::before { content: ''; background: url("../images/logo.svg") no-repeat -30%
 
 body.main-bg::after { content: ''; background: url("../images/rikky.png") no-repeat bottom; background-size: 100%; position: absolute; bottom: 0; right: 0; width: 40%; height: 100%; z-index: -1; }
 
-.container, .container-fluid { position: inherit; padding: 0 20px; }
+.container, .container-fluid { position: inherit; padding: 0 30px; }
 
 .container { max-width: 1440px; }
 
-.navbar { padding-top: 3rem; z-index: 1000; }
+.navbar { padding-top: 3rem; padding-bottom: 2rem; z-index: 1000; }
 
 .navbar .nav-link { color: white; font-weight: 700; font-size: 20px; transition: all 0.3s ease-in-out; }
 
@@ -47,6 +47,8 @@ body.main-bg::after { content: ''; background: url("../images/rikky.png") no-rep
 
 .sub-headline { font-size: 30px; font-weight: 300; color: var(--color-grey); margin-bottom: 50px; }
 
+@media (max-width: 767.98px) { .text-xxl { font-size: 50px; } .text-lg { font-size: 24px; } .text-md { font-size: 16px; } .headline { line-height: 1; } .sub-headline { font-size: 24px; } }
+
 .btn-primary { padding: 15px 50px; background-color: var(--color-primary); background: var(--grad-primary); font-size: 20px; font-weight: 500; border-radius: 50px; cursor: pointer; background-size: 200% 200%; }
 
 .btn-primary:hover { animation: gradient 1s ease both; }
@@ -73,5 +75,7 @@ body.main-bg::after { content: ''; background: url("../images/rikky.png") no-rep
 .timeline-nav .nav-link.active::before { width: 31px; height: 31px; background-color: rgba(0, 198, 255, 0.2); border: 1px solid var(--color-primary); }
 
 .timeline-nav .nav-link.active::after { background: var(--grad-primary); }
+
+@media (max-width: 991.98px) { body::before { background-position: 100%; } body.main-bg::after { content: none; } }
 
 /*# sourceMappingURL=main.css.map */
