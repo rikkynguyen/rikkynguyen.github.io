@@ -1,0 +1,11 @@
+{% assign data = include.data %}
+<div class="d-flex align-items-center skill-item py-4">
+  <div class="skill-item-icon me-3">
+    <img src="{{data.img}}" width="80px" />
+  </div>
+  <div class="skill-item-content">
+    <h5 class="fs-bold">{{data.title}}</h5>
+    <p class="text-grey mb-0"><em>{{data.exp}}</em></p>
+    <!--<p>{{data.description}}</p>-->
+  </div>
+</div>

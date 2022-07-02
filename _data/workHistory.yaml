@@ -1,0 +1,29 @@
+- id: present
+  time: 2018 - now
+  logo: /assets/images/companies/nfq.png
+  company: NFQ Asia | 8Bit Rockstars
+  role: UI Designer & Front-end Developer
+
+- id: year1618
+  time: 2016 - 2018
+  logo: /assets/images/companies/construct.webp
+  company: Construct Digital
+  role: Designer
+
+- id: year1516
+  time: 2015 - 2016
+  logo: /assets/images/companies/aes-vietnam.png
+  company: AES Vietnam
+  role: UI Designer & Front-end Developer
+
+- id: year2015
+  time: '2015'
+  logo: /assets/images/companies/april.png
+  company: April+ Agency
+  role: Intern Creative Designer
+
+- id: year1015
+  time: 2010 - 2015
+  logo: /assets/images/companies/rmit.png
+  company: RMIT University Vietnam
+  role: Bachelor of Multimedia Design

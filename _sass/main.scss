@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root {
+  --color-primary:   #00c6ff;
+  --color-secondary: #9733EE;
+  --color-grey:      #A9B5CD;
+
+  --grad-primary: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  --radial-black: radial-gradient(100% 197.75% at 0% 0%, #243B55 0%, #141E30 62.35%, #141E30 62.36%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: white;
+  background: var(--radial-black);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  &::before {
+    content: '';
+    background: url('../images/logo.svg') no-repeat -30%;
+    background-size: auto 150%;
+    opacity: 5%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+
+  &.main-bg::after {
+    content: '';
+    background: url('../images/rikky.png') no-repeat bottom;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  // footer {
+  //   margin-top: auto
+  // }
+}
+
+.container,
+.container-fluid {
+  position: inherit;
+  padding: 0 30px;
+}
+
+@import "nav";
+@import "typo";
+@import "button";
+@import "timeline";

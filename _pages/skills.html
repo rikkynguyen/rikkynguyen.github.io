@@ -1,0 +1,56 @@
+---
+layout: base
+title: Rikky Nguyen
+permalink: /skills
+---
+
+<div class="row">
+  <div class="col-12 col-lg-2 d-flex align-items-center">
+    <ul class="nav flex-column nav-skills" id="skills" role="tablist">
+      <li class="nav-skills-title">as a</li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link nav-skills-item active" id="nav-design-tab"
+          data-bs-toggle="tab" 
+          data-bs-target="#nav-design"
+          role="button" aria-controls="nav-design"
+        >DES</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link nav-skills-item" id="nav-developer-tab"
+          data-bs-toggle="tab" 
+          data-bs-target="#nav-developer"
+          role="button" aria-controls="nav-developer"
+        >DEV</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-12 col-lg-10">
+    <div class="tab-content" id="skillsContent">
+      <div class="tab-pane fade show active"
+        id="nav-design" role="tabpanel" aria-labelledby="nav-design-tab" tabindex="0"
+      >
+        <div class="row">
+          {% for item in site.data.skills.des %}
+            <div class="col-6">
+              {% include _skill-item.html data=item %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="tab-pane fade"
+        id="nav-developer" role="tabpanel" aria-labelledby="nav-developer-tab" tabindex="0"
+      >
+        <div class="row">
+          {% for item in site.data.skills.dev %}
+            <div class="col-6">
+              {% include _skill-item.html data=item %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

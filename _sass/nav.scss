@@ -1,0 +1,56 @@
+.navbar {
+  padding-top: 3rem;
+  z-index: 1000;
+
+  &-brand {}
+
+  .nav {
+    &-link {
+      color: white;
+      font-weight: 700;
+      font-size: 20px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+}
+
+.nav {
+  &-skills {
+    font-weight: 700;
+
+    &-title {
+      font-size: 20px;
+      padding: var(--bs-nav-link-padding-y) 0;
+      color: var(--color-grey);
+
+      &::after {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 50px;
+        background: var(--color-grey);
+        margin-top: var(--bs-nav-link-padding-y);
+      }
+    }
+
+    &-item {
+      font-size: 24px;
+      padding: var(--bs-nav-link-padding-y) 0;
+      color: var(--color-grey);
+      letter-spacing: 1;
+
+      &:hover {
+        color: var(--color-primary);
+      }
+
+      &.active {
+        font-size: 50px;
+        color: white;
+      }
+    }
+  }
+}

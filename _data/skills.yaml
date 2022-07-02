@@ -1,0 +1,56 @@
+dev:
+  - title: HTML
+    exp: 2012 - now
+    img: /assets/images/tools/fullcolor/html.svg
+    description: Create web layout, email template from scratch
+
+  - title: CSS
+    exp: 2012 - now
+    img: /assets/images/tools/fullcolor/css.svg
+    description: Deeply understanding and using most of CSS properties.
+
+  - title: SASS / SCSS
+    exp: 2014 - now
+    img: /assets/images/tools/fullcolor/sass.svg
+    description: Use to organise stylesheet clearer, use of function and mixin to shorten stylesheet
+
+  - title: Bootstrap
+    exp: 2015 - now
+    img: /assets/images/tools/fullcolor/bootstrap.svg
+    description: From v3 to now, understand how Bootstrap work and differences between versions.
+
+  - title: Javascript
+    exp: 2020 - now
+    img: /assets/images/tools/fullcolor/javascript.svg
+    description: Write functions to manipulate DOM and apply animation.
+
+  - title: JQuery
+    exp: 2020 - now
+    img: /assets/images/tools/fullcolor/jquery.svg
+    description: Can use ES6 syntax, arrow function.
+
+  - title: Vue JS
+    exp: 2021 - now
+    img: /assets/images/tools/fullcolor/vuejs.svg
+    description: Work on Vuejs to create bank registration form using options API preference. 
+
+des:
+  - title: Adobe Photoshop
+    exp: 2006 - now
+    img: /assets/images/tools/fullcolor/photoshop.svg
+    description: Work with bitmap images such asDesign poster, banners, social media ads, etc.
+
+  - title: Adobe Illustrator
+    exp: 2010 - now
+    img: /assets/images/tools/fullcolor/illustrator.svg
+    description: Draw vector objects like logos, icons and illustrations.
+
+  - title: Sketch
+    exp: 2015 - now
+    img: /assets/images/tools/fullcolor/sketch.svg
+    description: Use to design websites and mobile apps.
+
+  - title: Figma
+    exp: 2019 - now
+    img: /assets/images/tools/fullcolor/figma.svg
+    description: Design and create protoype UI as well as work with team easily.

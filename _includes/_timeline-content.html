@@ -1,0 +1,11 @@
+<div class="tab-content" id="timelineContent">
+  {% for item in site.data.workHistory %}
+    <div class="text-center tab-pane fade{% if forloop.index == 1 %} show active{% endif %}"
+      id="nav-{{item.id}}" role="tabpanel" aria-labelledby="nav-{{item.id}}-tab" tabindex="0"
+    >
+      <img src="{{item.logo}}" alt="{{item.company}}" class="mb-5" />
+      <h5 class="fw-bold mb-2">{{item.company}}</h5>
+      <p class="text-grey">{{item.role}}</p>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,43 @@
+.text {
+  &-xxl {
+    font-size: 80px;
+  }
+
+  &-lg {
+    font-size: 30px;
+  }
+
+  &-md {
+    font-size: 18px;
+  }
+
+  &-primary {
+    color: var(--color-primary);
+  }
+
+  &-secondary {
+    color: var(--color-secondary);
+  }
+
+  &-grey {
+    color: var(--color-grey);
+  }
+
+  &-white {
+    color: #FFF;
+  }
+}
+
+.headline {
+  font-weight: 700;
+  line-height: 80px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.sub-headline {
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--color-grey);
+  margin-bottom: 50px;
+}

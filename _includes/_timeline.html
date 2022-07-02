@@ -1,0 +1,11 @@
+<ul class="nav timeline-nav flex-column" id="timeline" role="tablist">
+  {% for item in site.data.workHistory %}
+    <li class="nav-item" role="presentation">
+      <a class="nav-link{% if forloop.index == 1 %} active{% endif %}" id="nav-{{item.id}}-tab"
+        data-bs-toggle="tab" 
+        data-bs-target="#nav-{{item.id}}"
+        role="button" aria-controls="nav-{{item.id}}"
+      >{{item.time}}</a>
+    </li>
+  {% endfor %}
+</ul>
