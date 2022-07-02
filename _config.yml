@@ -11,3 +11,4 @@ sass:
 include:
   - _pages
   - .htaccess
+theme: jekyll-theme-cayman
