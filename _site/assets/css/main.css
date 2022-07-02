@@ -7,7 +7,9 @@ body::before { content: ''; background: url("../images/logo.svg") no-repeat -30%
 
 body.main-bg::after { content: ''; background: url("../images/rikky.png") no-repeat bottom; background-size: 100%; position: absolute; bottom: 0; right: 0; width: 40%; height: 100%; z-index: -1; }
 
-.container, .container-fluid { position: inherit; padding: 0 30px; }
+.container, .container-fluid { position: inherit; padding: 0 20px; }
+
+.container { max-width: 1440px; }
 
 .navbar { padding-top: 3rem; z-index: 1000; }
 
@@ -71,5 +73,3 @@ body.main-bg::after { content: ''; background: url("../images/rikky.png") no-rep
 .timeline-nav .nav-link.active::before { width: 31px; height: 31px; background-color: rgba(0, 198, 255, 0.2); border: 1px solid var(--color-primary); }
 
 .timeline-nav .nav-link.active::after { background: var(--grad-primary); }
-
-/*# sourceMappingURL=main.css.map */

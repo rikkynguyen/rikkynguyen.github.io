@@ -1,12 +1,12 @@
 header:
   - name: about
-    link: /me/about
+    link: /about
 
   - name: skills
-    link: /me/skills
+    link: /skills
 
   - name: works
-    link: /me/works
+    link: /works
 
 footer:
   - icon: behance

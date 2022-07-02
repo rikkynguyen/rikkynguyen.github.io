@@ -51,7 +51,11 @@ body {
 .container,
 .container-fluid {
   position: inherit;
-  padding: 0 30px;
+  padding: 0 20px;
+}
+
+.container {
+  max-width: 1440px
 }
 
 @import "nav";
