@@ -56,7 +56,8 @@
             {% for item in site.data.nav.footer %}
               <li class="nav-item">
                 <a class="nav-link" href="{{item.link | relative_url }}">
-                  <img src="assets/images/social/{{item.icon}}.svg" />
+                  {% capture iconImagePath %}assets/images/social/{{item.icon}}.svg{% endcapture %}
+                  <img src="{{ iconImagePath | relative_url }}" />
                 </a>
               </li>
             {% endfor %}

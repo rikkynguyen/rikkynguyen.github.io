@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 :root { --color-primary:   #00c6ff; --color-secondary: #9733EE; --color-grey:      #A9B5CD; --grad-primary: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); --radial-black: radial-gradient(100% 197.75% at 0% 0%, #243B55 0%, #141E30 62.35%, #141E30 62.36%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */; }
 
-body { margin: 0; font-family: 'Poppins', sans-serif; font-weight: 300; color: white; background: var(--radial-black); min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
+body { margin: 0; font-family: 'Poppins', sans-serif; font-weight: 300; color: white; background: var(--radial-black); min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow-x: hidden; width: 100vw; }
 
 body::before { content: ''; background: url("../images/logo.svg") no-repeat -30%; background-size: auto 150%; opacity: 5%; position: absolute; inset: 0; z-index: -1; }
 
-body.main-bg::after { content: ''; background: url("../images/rikky.png") no-repeat bottom; background-size: 100%; position: absolute; bottom: 0; right: 0; width: 40%; height: 100%; z-index: -1; }
+body.main-bg::after { content: ''; background: url("../images/rikky.png") no-repeat bottom right; background-size: contain; position: absolute; bottom: 0; right: 0; width: 90%; height: 90%; z-index: -1; }
 
 .container, .container-fluid { position: inherit; padding: 0 30px; }
 
@@ -29,11 +29,11 @@ body.main-bg::after { content: ''; background: url("../images/rikky.png") no-rep
 
 .nav-skills-item.active { font-size: 50px; color: white; }
 
-.text-xxl { font-size: 80px; }
+.text-xxl { font-size: 5rem; }
 
-.text-lg { font-size: 30px; }
+.text-lg { font-size: 1.875rem; }
 
-.text-md { font-size: 18px; }
+.text-md { font-size: 1.25rem; }
 
 .text-primary { color: var(--color-primary); }
 
@@ -43,11 +43,15 @@ body.main-bg::after { content: ''; background: url("../images/rikky.png") no-rep
 
 .text-white { color: #FFF; }
 
-.headline { font-weight: 700; line-height: 80px; color: #FFFFFF; margin-bottom: 30px; }
+.headline { font-weight: 700; line-height: 1; color: #FFFFFF; margin-bottom: 30px; }
 
-.sub-headline { font-size: 30px; font-weight: 300; color: var(--color-grey); margin-bottom: 50px; }
+.sub-headline { font-size: 1.875rem; font-weight: 300; color: var(--color-grey); margin-bottom: 50px; }
 
-@media (max-width: 767.98px) { .text-xxl { font-size: 50px; } .text-lg { font-size: 24px; } .text-md { font-size: 16px; } .headline { line-height: 1; } .sub-headline { font-size: 24px; } }
+@media (max-width: 1199.98px) { .text-xxl { font-size: 4rem; } .text-lg { font-size: 1.75rem; } .text-md { font-size: 1rem; } }
+
+@media (max-width: 991.98px) { .headline { margin-top: 50px; } }
+
+@media (max-width: 767.98px) { .text-xxl { font-size: 3rem; } .text-lg { font-size: 1.5rem; } .text-md { font-size: 1rem; } }
 
 .btn-primary { padding: 15px 50px; background-color: var(--color-primary); background: var(--grad-primary); font-size: 20px; font-weight: 500; border-radius: 50px; cursor: pointer; background-size: 200% 200%; }
 
@@ -55,6 +59,10 @@ body.main-bg::after { content: ''; background: url("../images/rikky.png") no-rep
 
 @keyframes gradient { 0% { background-position: 0% 50%; }
   100% { background-position: 100% 50%; } }
+
+.timeline-nav { flex-direction: column; }
+
+.timeline-nav-wrap { border-left: 1px solid white; }
 
 .timeline-nav .nav-item + .nav-item { margin-top: 30px; }
 
@@ -76,6 +84,12 @@ body.main-bg::after { content: ''; background: url("../images/rikky.png") no-rep
 
 .timeline-nav .nav-link.active::after { background: var(--grad-primary); }
 
-@media (max-width: 991.98px) { body::before { background-position: 100%; } body.main-bg::after { content: none; } }
+@media (max-width: 991.98px) { .timeline-nav { flex-direction: row; align-items: flex-start; justify-content: center; flex-wrap: nowrap; width: 100%; overflow-x: auto; } .timeline-nav-wrap { border-left: none; position: relative; margin-top: 50px; margin-bottom: 30px; } .timeline-nav-wrap::before { content: ''; display: block; height: 1px; background: white; position: absolute; top: 15px; left: 0; right: 0; } .timeline-nav .nav-item + .nav-item { margin-top: 0px; } .timeline-nav .nav-link { padding-top: 40px; white-space: nowrap; } .timeline-nav .nav-link::before, .timeline-nav .nav-link::after { top: 9px; left: 50%; transform: translateX(-50%); } .timeline-nav .nav-link::before { top: 1px; } }
+
+@media (max-width: 767.98px) { .timeline-nav { justify-content: flex-start; } }
+
+@media (max-width: 991.98px) { body::before { background-position: 100%; } body.main-bg::after { width: 80%; background-position: 20vw; } }
+
+@media (max-width: 767.98px) { body.main-bg::after { content: none; } }
 
 /*# sourceMappingURL=main.css.map */

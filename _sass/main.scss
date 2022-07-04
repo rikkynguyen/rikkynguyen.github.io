@@ -20,6 +20,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  overflow-x: hidden;
+  width: 100vw;
 
   &::before {
     content: '';
@@ -33,13 +35,13 @@ body {
 
   &.main-bg::after {
     content: '';
-    background: url('../images/rikky.png') no-repeat bottom;
-    background-size: 100%;
+    background: url('../images/rikky.png') no-repeat bottom right;
+    background-size: contain;
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 40%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     z-index: -1;
   }
 
@@ -69,7 +71,16 @@ body {
     &::before {
       background-position: 100%;
     }
+    
+    &.main-bg::after {
+      width: 80%;
+      background-position: 20vw;
+    }
+  }
+}
 
+@media (max-width: 767.98px) {
+  body {
     &.main-bg::after {
       content: none;
     }
