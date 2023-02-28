@@ -5,13 +5,17 @@ body { margin: 0; font-family: 'Poppins', sans-serif; font-weight: 300; color: w
 
 body::before { content: ''; background: url("../images/logo.svg") no-repeat -30%; background-size: auto 150%; opacity: 5%; position: absolute; inset: 0; z-index: -1; }
 
-body.main-bg::after { content: ''; background: url("../images/rikky.png") no-repeat bottom right; background-size: contain; position: absolute; bottom: 0; right: 0; width: 90%; height: 90%; z-index: -1; }
+body.main-bg::after { --after-img-width: 90%; --after-img-height: 90%; content: ''; background: url("../images/rikky.png") no-repeat bottom right; background-size: contain; position: absolute; bottom: 0; right: 0; width: var(--after-img-width); height: var(--after-img-height); z-index: -1; }
+
+.wrapper { display: flex; align-items: center; flex-grow: 1; }
 
 .container, .container-fluid { position: inherit; padding: 0 30px; }
 
 .container { max-width: 1440px; }
 
-.navbar { padding-top: 3rem; padding-bottom: 2rem; z-index: 1000; }
+.navbar { padding-block: 2rem; z-index: 1000; }
+
+.navbar-brand { margin: 0; }
 
 .navbar .nav-link { color: white; font-weight: 700; font-size: 20px; transition: all 0.3s ease-in-out; }
 
@@ -43,9 +47,9 @@ body.main-bg::after { content: ''; background: url("../images/rikky.png") no-rep
 
 .text-white { color: #FFF; }
 
-.headline { font-weight: 700; line-height: 1; color: #FFFFFF; margin-bottom: 30px; }
+.headline { --fs-heading: clamp(1.875rem, 1.2148rem + 2.8169vw, 3.75rem); font-size: var(--fs-heading); font-weight: 700; line-height: 1; color: #FFFFFF; margin-bottom: 30px; }
 
-.sub-headline { font-size: 1.875rem; font-weight: 300; color: var(--color-grey); margin-bottom: 50px; }
+.sub-headline { --fs-sub-headline: clamp(1.125rem, 0.8609rem + 1.1268vw, 1.875rem); font-size: var(--fs-sub-headline); font-weight: 300; color: var(--color-grey); margin-bottom: 50px; }
 
 @media (max-width: 1199.98px) { .text-xxl { font-size: 4rem; } .text-lg { font-size: 1.75rem; } .text-md { font-size: 1rem; } }
 
@@ -53,7 +57,7 @@ body.main-bg::after { content: ''; background: url("../images/rikky.png") no-rep
 
 @media (max-width: 767.98px) { .text-xxl { font-size: 3rem; } .text-lg { font-size: 1.5rem; } .text-md { font-size: 1rem; } }
 
-.btn-primary { padding: 15px 50px; background-color: var(--color-primary); background: var(--grad-primary); font-size: 20px; font-weight: 500; border-radius: 50px; cursor: pointer; background-size: 200% 200%; }
+.btn-primary { padding: 16px 48px; background-color: var(--color-primary); background: var(--grad-primary); font-size: 18px; font-weight: 500; border-radius: 50px; cursor: pointer; background-size: 200% 200%; }
 
 .btn-primary:hover { animation: gradient 1s ease both; }
 
@@ -88,8 +92,6 @@ body.main-bg::after { content: ''; background: url("../images/rikky.png") no-rep
 
 @media (max-width: 767.98px) { .timeline-nav { justify-content: flex-start; } }
 
-@media (max-width: 991.98px) { body::before { background-position: 100%; } body.main-bg::after { width: 80%; background-position: 20vw; } }
-
-@media (max-width: 767.98px) { body.main-bg::after { content: none; } }
+@media (max-width: 991.98px) { body::before { background-position: 100%; } body.main-bg::after { --after-img-width: 130%; --after-img-height: calc(var(--after-img-width) * 0.6); background-position: 65vw bottom; } }
 
 /*# sourceMappingURL=main.css.map */

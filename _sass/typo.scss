@@ -29,6 +29,8 @@
 }
 
 .headline {
+  --fs-heading: clamp(1.875rem, 1.2148rem + 2.8169vw, 3.75rem);
+  font-size: var(--fs-heading);
   font-weight: 700;
   line-height: 1;
   color: #FFFFFF;
@@ -36,7 +38,8 @@
 }
 
 .sub-headline {
-  font-size: 1.875rem;
+  --fs-sub-headline: clamp(1.125rem, 0.8609rem + 1.1268vw, 1.875rem);
+  font-size: var(--fs-sub-headline);
   font-weight: 300;
   color: var(--color-grey);
   margin-bottom: 50px;
