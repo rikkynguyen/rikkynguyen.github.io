@@ -133,7 +133,8 @@ body {
 @media (max-width: 767.98px) {
   body {
     &.main-bg::after {
-       background-position: 60vw bottom;
+      background-position: 60vw bottom;
+      opacity: 0.5;
     }
   }
 }

@@ -1,10 +1,8 @@
 :root {
   --fs-12-18: clamp(0.75rem, 0.6856rem + 0.2746vw, 1.125rem);
   --fs-16-24: clamp(1rem, 0.9142rem + 0.3661vw, 1.5rem);
-  --fs-sub-headline: clamp(1rem, 0.7855rem + 0.9153vw, 2.25rem);
+  --fs-sub-headline: clamp(1.125rem, 0.9319rem + 0.8238vw, 2.25rem);
   --fs-heading: clamp(1.875rem, 1.2148rem + 2.8169vw, 3.75rem);
-
-  font-size: var(--fs-12-18);
 }
 
 .text {
