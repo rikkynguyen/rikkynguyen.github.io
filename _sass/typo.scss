@@ -1,3 +1,12 @@
+:root {
+  --fs-12-18: clamp(0.75rem, 0.6856rem + 0.2746vw, 1.125rem);
+  --fs-16-24: clamp(1rem, 0.9142rem + 0.3661vw, 1.5rem);
+  --fs-sub-headline: clamp(1rem, 0.7855rem + 0.9153vw, 2.25rem);
+  --fs-heading: clamp(1.875rem, 1.2148rem + 2.8169vw, 3.75rem);
+
+  font-size: var(--fs-12-18);
+}
+
 .text {
   &-xxl {
     font-size: 5rem;
@@ -12,24 +21,23 @@
   }
 
   &-primary {
-    color: var(--color-primary);
+    color: var(--color-primary)!important;
   }
 
   &-secondary {
-    color: var(--color-secondary);
+    color: var(--color-secondary)!important;
   }
 
   &-grey {
-    color: var(--color-grey);
+    color: var(--color-grey)!important;
   }
 
   &-white {
-    color: #FFF;
+    color: #FFF!important;
   }
 }
 
 .headline {
-  --fs-heading: clamp(1.875rem, 1.2148rem + 2.8169vw, 3.75rem);
   font-size: var(--fs-heading);
   font-weight: 700;
   line-height: 1;
@@ -38,11 +46,18 @@
 }
 
 .sub-headline {
-  --fs-sub-headline: clamp(1.125rem, 0.8609rem + 1.1268vw, 1.875rem);
   font-size: var(--fs-sub-headline);
   font-weight: 300;
   color: var(--color-grey);
-  margin-bottom: 50px;
+}
+
+h3.h3 {
+  color: var(--color-primary);
+  font-size: var(--fs-sub-headline);
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1199.98px) {

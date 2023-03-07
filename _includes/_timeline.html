@@ -1,11 +1,15 @@
-<ul class="nav timeline-nav" id="timeline" role="tablist">
+<h3 class="h3">Experience</h3>
+<ul class="timeline">
   {% for item in site.data.workHistory %}
-    <li class="nav-item" role="presentation">
-      <a class="nav-link{% if forloop.index == 1 %} active{% endif %}" id="nav-{{item.id}}-tab"
-        data-bs-toggle="tab" 
-        data-bs-target="#nav-{{item.id}}"
-        role="button" aria-controls="nav-{{item.id}}"
-      >{{item.time}}</a>
-    </li>
+  <li class="timeline-item">
+    <span class="timeline-time">
+      <span class="badge badge-primary">{{item.time}}</span>
+    </span>
+    <span class="timeline-line"></span>
+    <span class="timeline-event">
+      <b class="fw-bold mb-2">{{item.company}}</b>
+      <p class="text-grey">{{item.role}}</p>
+    </span>
+  </li>
   {% endfor %}
 </ul>

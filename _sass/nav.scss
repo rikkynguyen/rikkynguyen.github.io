@@ -4,17 +4,51 @@
 
   &-brand {
     margin: 0;
+
+    svg {
+      fill: var(--color-primary);
+    }
   }
 
   .nav {
     &-link {
       color: white;
       font-weight: 700;
-      font-size: 20px;
-      transition: all 0.3s ease-in-out;
+      font-size: 2rem;
+      transition: color 0.3s ease-in-out;
 
       &:hover {
         color: var(--color-primary);
+      }
+    }
+  }
+
+  &-head {
+    .nav {
+      &-link {
+        color: var(--color-grey);
+        font-size: var(--fs-16-24);
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          height: 2px;
+          width: 0;
+          background: var(--color-primary);
+          transition: width 0.3s ease-in-out;
+          position: absolute;
+          bottom: 0;
+        }
+
+        &.active,
+        &:hover {
+          color: white;
+
+          &:after {
+            width: 40%;
+          }
+        }
       }
     }
   }

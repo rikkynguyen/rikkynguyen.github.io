@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
 :root {
-  --color-primary:   #00c6ff;
+  --color-primary:   #A0FE07;
   --color-secondary: #9733EE;
   --color-grey:      #A9B5CD;
+  --color-dark:      #0F2944;
 
   --grad-primary: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
   --radial-black: radial-gradient(100% 197.75% at 0% 0%, #243B55 0%, #141E30 62.35%, #141E30 62.36%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
@@ -15,13 +16,13 @@ body {
   font-weight: 300;
   color: white;
   background: var(--radial-black);
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
   overflow-x: hidden;
-  width: 100vw;
+  width: 100dvw;
 
   &::before {
     content: '';
@@ -61,11 +62,34 @@ body {
 .container,
 .container-fluid {
   position: inherit;
-  padding: 0 30px;
+  padding-inline: 50px;
 }
 
 .container {
   max-width: 1440px;
+}
+
+.mb-50 {
+  margin-bottom: 50px!important;
+}
+
+.table {
+  border-color: var(--color-grey);
+}
+
+.row {
+  --bs-gutter-x: 5rem;
+}
+
+.img-list {
+  --img-list-gutter: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--img-list-gutter);
+
+  img {
+    width: calc((100% - 4 * var(--img-list-gutter)) / 5);
+  }
 }
 
 @import "nav";
@@ -73,6 +97,15 @@ body {
 @import "button";
 @import "timeline";
 
+@media (max-width: 1399.98px) {
+  .row {
+    --bs-gutter-x: 2rem;
+  }
+
+  .img-list {
+    --img-list-gutter: 30px;
+  }
+}
 
 @media (max-width: 991.98px) {
   body {
@@ -83,15 +116,24 @@ body {
     &.main-bg::after {
       --after-img-width: 130%;
       --after-img-height: calc(var(--after-img-width) * 0.6);
-      background-position: 65vw bottom;
+      background-position: var(--after-img-width) bottom;
     }
+
+    .container,
+    .container-fluid {
+      padding-inline: 30px;
+    }
+  }
+
+  .img-list {
+    --img-list-gutter: 20px;
   }
 }
 
 @media (max-width: 767.98px) {
-  //body {
-  //  &.main-bg::after {
-  //    content: none;
-  //  }
-  //}
+  body {
+    &.main-bg::after {
+       background-position: 60vw bottom;
+    }
+  }
 }

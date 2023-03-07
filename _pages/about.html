@@ -4,21 +4,53 @@ title: Rikky Nguyen
 permalink: /about
 ---
 
+<h1 class="headline col-12">I’m a <highlight class="text-primary">hybrid</highlight> species</h1>
 <div class="row">
-  <div class="col-12 col-lg-4">
+  <div class="col-12">
+  </div>
+
+  <div class="col-12 col-lg-7 col-xl-8">
     <div class="row">
-      <h1 class="headline col-12">I’m a hybrid species</h1>
-      <p class="text-md text-grey col-12 col-md-9 offset-md-3 offset-lg-0 col-lg-12">
-        Born as a designer, live among developers. My main field is UX/UI & web, but I also work on branding and communication design. Obsessed in visual and physical feeling, I passionate in creating and learning new things. For me, sharing and listen to others, I can learn and improve myself faster.
-      </p>
+      {% for item in site.data.about %}
+        <div class="col-12 col-md-6 mb-50">
+          <h3 class="h3">{{ item.title }}</h3>
+          
+          {% if item.layout == 'table' %}
+            <table class="table text-white">
+              <tbody>
+                {% for content in item.content %}
+                  <tr>
+                    <td class="ps-0">{{content[0]}}</td>
+                    <td>{{content[1]}}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          {% elsif item.layout == 'text-list' %}
+            {% for content in item.content %}
+              <p>
+                <strong>{{ content.title }}</strong><br>
+                <span class="text-grey">{{ content.label }}</span><br>
+                {{ content.cert }}
+              </p>
+            {% endfor %}
+          {% elsif item.layout == 'img-list' %}
+            <div class="img-list">
+              {% for content in item.content %}
+                <img src="{{ content.img | relative_url }}" alt="{{ content.title }}" />
+              {% endfor %}
+            </div>
+          {% else %}
+            <p>{{ item.content }}</p>
+          {% endif %}
+          
+        </div>
+      {% endfor %}
+
     </div>
   </div>
 
-  <div class="col-12 col-lg-2 offset-lg-2 d-flex align-items-center timeline-nav-wrap">
+  <div class="col-12 col-lg-5 col-xl-4">
     {% include _timeline.html %}
-  </div>
-
-  <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center">
-    {% include _timeline-content.html %}
   </div>
 </div>

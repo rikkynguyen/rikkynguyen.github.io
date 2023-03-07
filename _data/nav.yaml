@@ -1,11 +1,8 @@
 header:
-  - name: about
+  - name: about me
     link: /about
 
-  - name: skills
-    link: /skills
-
-  - name: works
+  - name: my works
     link: /works
 
 footer:

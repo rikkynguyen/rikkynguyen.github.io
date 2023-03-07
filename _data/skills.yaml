@@ -24,11 +24,6 @@ dev:
     img: /assets/images/tools/fullcolor/javascript.svg
     description: Write functions to manipulate DOM and apply animation.
 
-  - title: JQuery
-    exp: 2020 - now
-    img: /assets/images/tools/fullcolor/jquery.svg
-    description: Can use ES6 syntax, arrow function.
-
   - title: Vue JS
     exp: 2021 - now
     img: /assets/images/tools/fullcolor/vuejs.svg

@@ -1,0 +1,77 @@
+- title: Personal info
+  layout: table
+  content: {
+    'Full name': 'Nguyen Trung Truc',
+    'Nick name': 'Rikky Nguyen',
+    'Birthday': '14th August 1991',
+    'Nationality': 'Viet Nam',
+    'Languages': 'English, Vietnamese',
+  }
+
+- title: About me
+  content: 'Born as a designer, live among developers. I have more than 7 years of experience in the field of designing, of which more than 4 years I have focused on developing websites for foreign customers. I’m obsessed in visual and physical feeling, creating new thing and learning to be different.'
+
+- title: Education
+  layout: text-list
+  content: 
+  - title: RMIT International University, Vietnam 
+    label: 2010 - 2015
+    cert: Bachelor of Multimedia Design
+
+  - title: Silver Award
+    label: RMIT Vietnam Design Showcase 2013
+    cert: BankOn - Interactive mobile app.
+
+- title: Skills
+  layout: img-list
+  content:
+  - title: Adobe Photoshop
+    exp: 2006 - now
+    img: /assets/images/tools/fullcolor/photoshop.svg
+    description: Work with bitmap images such asDesign poster, banners, social media ads, etc.
+
+  - title: Adobe Illustrator
+    exp: 2010 - now
+    img: /assets/images/tools/fullcolor/illustrator.svg
+    description: Draw vector objects like logos, icons and illustrations.
+
+  - title: Sketch
+    exp: 2015 - now
+    img: /assets/images/tools/fullcolor/sketch.svg
+    description: Use to design websites and mobile apps.
+
+  - title: Figma
+    exp: 2019 - now
+    img: /assets/images/tools/fullcolor/figma.svg
+    description: Design and create protoype UI as well as work with team easily.
+
+  - title: HTML
+    exp: 2012 - now
+    img: /assets/images/tools/fullcolor/html.svg
+    description: Create web layout, email template from scratch
+
+  - title: CSS
+    exp: 2012 - now
+    img: /assets/images/tools/fullcolor/css.svg
+    description: Deeply understanding and using most of CSS properties.
+
+  - title: SASS / SCSS
+    exp: 2014 - now
+    img: /assets/images/tools/fullcolor/sass.svg
+    description: Use to organise stylesheet clearer, use of function and mixin to shorten stylesheet
+
+  - title: Bootstrap
+    exp: 2015 - now
+    img: /assets/images/tools/fullcolor/bootstrap.svg
+    description: From v3 to now, understand how Bootstrap work and differences between versions.
+
+  - title: Javascript
+    exp: 2020 - now
+    img: /assets/images/tools/fullcolor/javascript.svg
+    description: Write functions to manipulate DOM and apply animation.
+
+  - title: Vue JS
+    exp: 2021 - now
+    img: /assets/images/tools/fullcolor/vuejs.svg
+    description: Work on Vuejs to create bank registration form using options API preference. 
+
