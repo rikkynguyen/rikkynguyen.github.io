@@ -27,9 +27,9 @@
               <div class="carousel-caption__nav">
                 <strong>
                   {% if forloop.index <= 9 %}
-                    #0{{ forloop.index }}
+                    #0{{ forloop.index }} / {{forloop.length}}
                   {% else %}
-                    #{{ forloop.index }}
+                    #{{ forloop.index }} / {{forloop.length}}
                   {% endif %}
                 </strong>
                 <button type="button" data-bs-target="#portfolioSlide" data-bs-slide="prev">
