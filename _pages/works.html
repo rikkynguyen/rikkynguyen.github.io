@@ -5,8 +5,4 @@ permalink: /works
 container_class: px-0
 ---
 
-<div class="port-wrapper row mt-5 mx-0">
-  {% for item in site.data.portfolio %}
-    {% include _portfolio-item.html data=item %}
-  {% endfor %}
-</div>
+{% include _portfolio-slide.html %}

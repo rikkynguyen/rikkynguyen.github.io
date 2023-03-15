@@ -5,6 +5,10 @@
   --fs-heading: clamp(1.875rem, 1.2148rem + 2.8169vw, 3.75rem);
 }
 
+a {
+  color: var(--color-primary);
+}
+
 .text {
   &-xxl {
     font-size: 5rem;

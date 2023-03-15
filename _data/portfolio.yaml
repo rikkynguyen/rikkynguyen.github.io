@@ -1,55 +1,131 @@
-- title: 'Pix Map Mobile App Concept'
-  img: assets/images/works/pixmap/cover.png
+- title: 'Pixmap'
+  images: [
+    {
+      img: assets/images/works/pixmap/pixmap-1.png,
+      class: 'slide-up'
+    },
+    {
+      img: assets/images/works/pixmap/pixmap-2.png,
+      class: 'fade-in'
+    },
+    {
+     img: assets/images/works/pixmap/pixmap-3.png,
+     class: 'slide-down'
+    }
+  ]
+  color: '#FF526A'
   link: https://dribbble.com/shots/19827530-Pixamap-Mobile-App-Concept
-  description:
+  role: UX/UI Designer - Figma
+  class: 'mobile-app'
+  description: A concept mobile application aims to be a platform connecting photographers, studios, stylists and users who have demand on taking photograph quickly.
 
 - title: 'CVGT Mobile App Design'
-  img: assets/images/works/cvgt/cover.png
+  images: [
+    {
+      img: assets/images/works/cvgt/1.png,
+      class: 'slide-up'
+    },
+    {
+      img: assets/images/works/cvgt/2.png,
+      class: 'slide-down'
+    },
+  ]
+  color: '#F15323'
+  role: UX/UI Designer - Sketch App
   link: https://dribbble.com/shots/19827513-CVGT-Mobile-app-design
-  description:
-
-- title: 'Craft Selection'
-  img: assets/images/works/craftSelection/cover.png
-  link: https://dribbble.com/shots/19827416-Craft-Selection-shop-landing-page
-  description:
-
-- title: 'Effort Report App'
-  img: assets/images/works/effortApp/cover.jpg
-  link: https://www.behance.net/gallery/84720993/Effort-Report-App
-  description:
+  class: 'mobile-app'
+  description: CVGT is a tinder-like mobile app. It helps employees to explore, save and apply to dream jobs nearby. In contrast, employers can connect to applicants in anywhere, at anytime.
 
 - title: 'Let Eat'
-  img: assets/images/works/letEat/cover.png
+  images: [
+    {
+      img: assets/images/works/letEat/1.png,
+      class: 'slide-up'
+    },
+    {
+      img: assets/images/works/letEat/2.png,
+      class: 'fade-in'
+    },
+    {
+      img: assets/images/works/letEat/3.png,
+      class: 'slide-down'
+    },
+  ]
+  color: 'linear-gradient(90deg, #9AC355 0%, #36B74D 100%)'
   link: https://www.behance.net/gallery/86820435/Lets-Eat
-  description:
-
-- title: 'Skootar Order Feature'
-  img: assets/images/works/skootar/cover.jpg
-  link: https://www.behance.net/gallery/82392449/Skootar-Order-Concept
-  description:
+  role: UX/UI Designer - Sketch App
+  class: 'mobile-app'
+  description: A foody mobile app for MESA Group to provide their loyalty programs. Users can exchange their loyalty points for vouchers and discount coupons using within  MESA’s ecosystem.
 
 - title: 'DplusC Website redesign'
-  img: assets/images/works/dplusc/cover.png
+  images: [
+    {
+      img: assets/images/works/dplusc/1.png,
+      class: 'slide-up'
+    },
+    {
+      img: assets/images/works/dplusc/2.png,
+      class: 'slide-down'
+    },
+  ]
+  color: '#00CD10'
   link: https://www.behance.net/gallery/83497929/DplusC-redesign
-  description:
+  role: UX/UI Engineer - Sketch App, Bootstrap, Twig
+  class: 'website'
+  description: Redesign website for German agency. I took part in as UX/UI designer for project, then generating front end using Bootstrap and Twig (Symfony).
 
-- title: 'John & Partners'
-  img: assets/images/works/jp/cover.jpg
-  link: https://www.behance.net/gallery/25362959/John-Partners
-  description:
+- title: 'C2E'
+  images: [
+    {
+      img: assets/images/works/c2e/1.png,
+      class: 'slide-up'
+    },
+    {
+      img: assets/images/works/c2e/2.png,
+      class: 'slide-up'
+    },
+  ]
+  color: 'linear-gradient(135deg, #445BA9 17.19%, #71D0FF 99.99%, #72CEF3 100%);'
+  link:
+  role: UX/UI Designer - Figma
+  class: 'website'
+  description: C2E is a web3 social network. It provides reviews and ratings for blockchain and web3 service. Moreover, users can book KOLs and create marketing services for web3 communities.
 
-- title: 'Phở 1$'
-  img: assets/images/works/pho1usd/cover.jpg
-  link: https://www.behance.net/gallery/17813431/Ph-1S
-  description:
-
-- title: 'RIMS'
-  img: assets/images/works/rims/cover.jpg
-  link: https://www.behance.net/gallery/37167543/RIMS-Brand-Identity
-  description:
-
-- title: 'The Fresh Element'
-  img: assets/images/works/theFreshElement/cover.jpg
-  link: https://www.behance.net/gallery/35289941/The-F-Element
-  description:
+#- title: 'Craft Selection'
+#  img: assets/images/works/craftSelection/cover.png
+#  role: UX/UI Designer - Sketch App
+#  link: https://dribbble.com/shots/19827416-Craft-Selection-shop-landing-page
+#  class: 'website'
+#  description:
+#
+#- title: 'Effort Report App'
+#  img: assets/images/works/effortApp/cover.jpg
+#  link: https://www.behance.net/gallery/84720993/Effort-Report-App
+#  role: UX/UI Designer - Sketch App
+#  description:
+#
+#- title: 'Skootar Order Feature'
+#  img: assets/images/works/skootar/cover.jpg
+#  link: https://www.behance.net/gallery/82392449/Skootar-Order-Concept
+#  description:
+#
+#- title: 'John & Partners'
+#  img: assets/images/works/jp/cover.jpg
+#  link: https://www.behance.net/gallery/25362959/John-Partners
+#  description:
+#
+#- title: 'Phở 1$'
+#  img: assets/images/works/pho1usd/cover.jpg
+#  link: https://www.behance.net/gallery/17813431/Ph-1S
+#  description:
+#
+#- title: 'RIMS'
+#  img: assets/images/works/rims/cover.jpg
+#  link: https://www.behance.net/gallery/37167543/RIMS-Brand-Identity
+#  description:
+#
+#- title: 'The Fresh Element'
+#  img: assets/images/works/theFreshElement/cover.jpg
+#  link: https://www.behance.net/gallery/35289941/The-F-Element
+#  description:
 

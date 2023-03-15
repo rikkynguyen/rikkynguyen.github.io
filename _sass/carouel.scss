@@ -1,0 +1,247 @@
+%dark-blurred-bg {
+  background: rgba(15, 41, 68, 0.5);
+  backdrop-filter: blur(15px);
+}
+
+.active .slide-up {
+  animation: slideUp 1s;
+}
+
+.active .slide-down {
+  animation: slideDown 1s;
+}
+
+.active .fade-in {
+  animation: fadeIn 1s;
+}
+
+.carousel {
+  &-inner {
+    overflow: visible;
+  }
+
+  &-img {
+    &-wrap {
+      --project-color: #fff;
+      --project-bg-height: 80%;
+
+      width: 75%;
+      height: 100%;
+      margin-left: auto;
+      position: relative;
+
+      &:before {
+        content: '';
+        height: var(--project-bg-height);
+        position: absolute;
+        inset-inline: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--project-color);
+        border-radius: 20px;
+      }
+    }
+  }
+
+  &-images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+
+    img {
+      filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.15));
+      animation: fadeIn 1s;
+    }
+  }
+
+  &-item {
+    padding: 2rem;
+
+    &.mobile-app{
+      img {
+        --translate-img-position: 10%;
+        --translate-img-position-revert: calc(var(--translate-img-position) * -1);
+        --init-img-position: calc(var(--translate-img-position) + 20%);
+        --init-img-position-revert: calc(var(--translate-img-position-revert) - 20%);
+
+        max-width: 30%;
+        max-height: 80%;
+
+        &.slide-up { transform: translateY(var(--translate-img-position)) }
+        &.slide-down { transform: translateY(var(--translate-img-position-revert)) }
+      }
+    }
+
+    &.website {
+      img {
+        max-width: 50%;
+        max-height: 100%;
+      }
+
+      .carousel-images {
+        --translate-img-position: calc((100% - var(--project-bg-height)) / 2 * -1);
+        --translate-img-position-revert: calc(var(--translate-img-position) * -1);
+        gap: 0;
+        z-index: 1;
+
+        img {
+
+          &.slide-up {
+            transform: translateY(var(--translate-img-position));
+          }
+
+          &.slide-down {
+            transform: translateY(var(--translate-img-position-revert));
+          }
+
+          & + img {
+            margin-left: -4vw;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+
+  &-caption {
+    position: relative;
+    inset: unset;
+    text-align: left;
+    width: 100%;
+
+    &__wrapper {
+      position: absolute;
+      left: 0;
+      inset-block: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    &__content {
+      @extend %dark-blurred-bg;
+      padding: 2rem;
+      margin-bottom: 2px;
+    }
+
+    &__nav {
+      display: flex;
+      gap: 2px;
+
+      &>strong, &>button {
+        @extend %dark-blurred-bg;
+      }
+
+      &>strong {
+        flex: 1;
+        padding-left: 2rem;
+        display: flex;
+        align-items: center;
+      }
+
+      &>button {
+        font-size: var(--fs-16-24);
+        line-height: var(--fs-16-24);
+        border: 0;
+        color: white;
+        padding: 0.6rem;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(var(--init-img-position));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(var(--translate-img-position));
+  }
+}
+@keyframes slideDown {
+  0% {
+
+    opacity: 0;
+    transform: translateY(var(--init-img-position-revert));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(var(--translate-img-position-revert));
+  }
+}
+
+// for xl screen
+@media (min-width: 1400px) {
+  .carousel {
+    &-inner {
+      width: 80%;
+      margin-inline: auto;
+    }
+  }
+}
+
+// for tablet don screens
+@media (max-width: 1199.98px) {
+  .carousel {
+    &-img-wrap {
+      &::before {
+        height: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .carousel {
+    &-item {
+      height: auto!important;
+      padding: 2rem 0;
+    }
+
+    &-img-wrap {
+      width: 100%;
+      height: 70%!important;
+
+      &::before {
+        height: 80%;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+      }
+    }
+
+    &-images {
+      width: 100%;
+    }
+
+    &-caption__wrapper {
+      position: relative;
+      inset: unset;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .carousel {
+    &-img-wrap {
+      &::before {
+        width: calc(100vw - 20px);
+      }
+    }
+  }
+}

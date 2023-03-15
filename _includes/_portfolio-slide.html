@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div id="portfolioSlide" class="carousel slide carousel-fade" data-bs-interval="false">
+
+    <div class="carousel-inner">
+      {% for item in site.data.portfolio %}
+        <div class="carousel-item {{item.class}}{% if forloop.first %} active{% endif %}">
+          <div class="carousel-img-wrap" style="--project-color: {{ item.color }};">
+            {% if item.images %}
+              <div class="carousel-images multiple-images">
+                {% for image in item.images %}
+                  <img class="{{image.class}}" src="{{image.img}}" alt="{{item.title}}">
+                {% endfor %}
+              </div>
+            {% else %}
+              <img src="{{item.img}}" class="d-block w-100" alt="{{item.title}}">
+            {% endif %}
+          </div>
+
+          <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-5 col-xl-4 carousel-caption__wrapper">
+            <div class="carousel-caption">
+              <div class="carousel-caption__content">
+                <h3 class="h3">{{item.title}}</h3>
+                <p class="text-grey"><small>{{item.role}}</small></p>
+                <p>{{item.description}}</p>
+                {% if item.link %}<a href="{{ item.link }}" target="_blank">See detail</a>{% endif %}
+              </div>
+              <div class="carousel-caption__nav">
+                <strong>
+                  {% if forloop.index <= 9 %}
+                    #0{{ forloop.index }}
+                  {% else %}
+                    #{{ forloop.index }}
+                  {% endif %}
+                </strong>
+                <button type="button" data-bs-target="#portfolioSlide" data-bs-slide="prev">
+                  <span class="bi bi-arrow-left"></span>
+                </button>
+                <button type="button" data-bs-target="#portfolioSlide" data-bs-slide="next">
+                  <span class="bi bi-arrow-right"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>

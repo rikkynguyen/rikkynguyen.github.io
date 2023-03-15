@@ -16,20 +16,20 @@ body {
   font-weight: 300;
   color: white;
   background: var(--radial-black);
-  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
   overflow-x: hidden;
   width: 100dvw;
+  min-height: 100dvh;
 
   &::before {
     content: '';
     background: url('../images/logo.svg') no-repeat -30%;
     background-size: auto 150%;
     opacity: 5%;
-    position: absolute;
+    position: fixed;
     inset: 0;
     z-index: -1;
   }
@@ -96,6 +96,7 @@ body {
 @import "typo";
 @import "button";
 @import "timeline";
+@import "carouel";
 
 @media (max-width: 1399.98px) {
   .row {
@@ -135,6 +136,11 @@ body {
     &.main-bg::after {
       background-position: 60vw bottom;
       opacity: 0.5;
+    }
+
+    .container,
+    .container-fluid {
+      padding-inline: 15px;
     }
   }
 }
