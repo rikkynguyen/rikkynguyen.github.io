@@ -18,6 +18,8 @@
 .carousel {
   &-inner {
     overflow: visible;
+    height: var(--crs-inner-height);
+    max-height: 100%;
   }
 
   &-img {
@@ -62,6 +64,7 @@
 
   &-item {
     padding: 2rem;
+    height: 100%;
 
     &.mobile-app{
       img {
@@ -85,6 +88,7 @@
       }
 
       .carousel-images {
+        --init-img-position: 0;
         --translate-img-position: calc((100% - var(--project-bg-height)) / 2);
         gap: 0;
         z-index: 1;
@@ -94,7 +98,7 @@
           transition: all 1s;
 
           &.slide-up {
-            bottom: 0;
+            bottom: var(--init-img-position);
             &:first-child {
               left: 0;
             }
@@ -104,7 +108,7 @@
           }
 
           &.slide-down {
-            top: 0;
+            top: var(--init-img-position);
             right: 0;
           }
 
@@ -194,7 +198,6 @@
 }
 @keyframes slideDown {
   0% {
-
     opacity: 0;
     transform: translateY(var(--init-img-position-revert));
   }
@@ -217,10 +220,12 @@
 // for tablet don screens
 @media (max-width: 1199.98px) {
   .carousel {
+    &-images {
+      width: 70%;
+    }
+
     &-img-wrap {
-      &::before {
-        height: 60%;
-      }
+      --project-bg-height: 40%;
     }
   }
 }
@@ -230,11 +235,21 @@
     &-item {
       height: auto!important;
       padding: 2rem 0;
+
+      &.website img {
+        --translate-img-position: 0;
+        --init-img-position: -2rem;
+      }
+    }
+
+    &-images {
+      width: 50%;
+      margin-right: auto;
     }
 
     &-img-wrap {
       width: 100%;
-      height: 70%!important;
+      height: 300px!important;
 
       &::before {
         height: 80%;
@@ -244,8 +259,8 @@
       }
     }
 
-    &-images {
-      width: 100%;
+    &-caption {
+      padding: 0;
     }
 
     &-caption__wrapper {
@@ -258,6 +273,10 @@
 
 @media (max-width: 767.98px) {
   .carousel {
+    &-images {
+      width: 100%;
+    }
+
     &-img-wrap {
       &::before {
         width: calc(100vw - 20px);

@@ -38,5 +38,5 @@ $(document).ready(() => {
   })
 
   const carouselInnerHeight = window.innerHeight - ($('.navbar-head').outerHeight() + $('footer').outerHeight());
-  $('#portfolioSlide .carousel-item').css('height', carouselInnerHeight);
+  $('#portfolioSlide .carousel-inner').css('--crs-inner-height', carouselInnerHeight + 'px');
 })
