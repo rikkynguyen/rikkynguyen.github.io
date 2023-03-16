@@ -33,6 +33,10 @@ $(document).ready(() => {
   //   ]
   // })
 
+  $(window).on('load', () => {
+    $('.loader').fadeOut();
+  })
+
   const carouselInnerHeight = window.innerHeight - ($('.navbar-head').outerHeight() + $('footer').outerHeight());
-  $('#portfolioSlide .carousel-item').css('height', carouselInnerHeight)
+  $('#portfolioSlide .carousel-item').css('height', carouselInnerHeight);
 })
