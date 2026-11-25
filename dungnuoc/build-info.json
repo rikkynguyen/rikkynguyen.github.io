@@ -1,10 +1,10 @@
 {
-  "commit": "5338811f620f1e7f3b086d9eb7a14349595574a0",
+  "commit": "45ed79948ef109a3078c62c5dfe4198160960d7f",
   "assets": {
     "male": {
-      "path": "assets/male-65a1e5bc2230.glb",
-      "bytes": 20035992,
-      "sha256": "65a1e5bc2230eb698ef04f1eeb6f229d4507274609449b14d5008930c8d78531"
+      "path": "assets/male-95e2a0d9d3b6.glb",
+      "bytes": 20436264,
+      "sha256": "95e2a0d9d3b66a1c21c59c53e3d1059f8b25ee4b5947186b9a63497c8ead5dd9"
     },
     "female": {
       "path": "assets/female-b453b1858d00.glb",
