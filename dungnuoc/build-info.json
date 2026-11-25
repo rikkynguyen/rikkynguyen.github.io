@@ -1,15 +1,15 @@
 {
-  "commit": "45ed79948ef109a3078c62c5dfe4198160960d7f",
+  "commit": "2ce435a235136273c95a6f07dfb075f653db9870",
   "assets": {
     "male": {
-      "path": "assets/male-95e2a0d9d3b6.glb",
-      "bytes": 20436264,
-      "sha256": "95e2a0d9d3b66a1c21c59c53e3d1059f8b25ee4b5947186b9a63497c8ead5dd9"
+      "path": "assets/male-7d201a8e93ff.glb",
+      "bytes": 20795240,
+      "sha256": "7d201a8e93ffb5e1b6289cffe12d5b3019bbc94e727e2890114a67aa03a12721"
     },
     "female": {
-      "path": "assets/female-b453b1858d00.glb",
-      "bytes": 18798376,
-      "sha256": "b453b1858d00886e055f3a7862844bc9b1b434074da1b9e0c440db6fdcefa8c0"
+      "path": "assets/female-adc532d90fc1.glb",
+      "bytes": 18922452,
+      "sha256": "adc532d90fc1403d916890bffdfd78f4cb23eb1b93135a4037a70b74e38f13d1"
     }
   }
 }
