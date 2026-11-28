@@ -1,0 +1,23 @@
+{
+  "upstream": "8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5",
+  "weight": 600,
+  "changed": {
+    "F": 1,
+    "H": 4,
+    "I": 2,
+    "K": 1,
+    "L": 1,
+    "M": 2,
+    "N": 2,
+    "P": 1,
+    "R": 1,
+    "T": 1,
+    "U": 2
+  },
+  "flareUnits": 12,
+  "depthUnits": 55,
+  "upm": 1000,
+  "vietnameseCodepoints": 154,
+  "originalBytes": 61888,
+  "derivedBytes": 62204
+}
