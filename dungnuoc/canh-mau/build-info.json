@@ -1,5 +1,5 @@
 {
-  "commit": "029c7bb97777fa8ecd545058047e572af68ece60",
+  "commit": "0d218ccca14a666a6553a2ba97cd62dc66c28083",
   "assets": {
     "male": {
       "path": "assets/male-7d201a8e93ff.glb",
@@ -42,6 +42,11 @@
       "path": "assets/animal-cow-959f1ede5f6c.glb",
       "bytes": 1867176,
       "sha256": "959f1ede5f6c284ba2c47084d62bcdecd9d62f687de94939fcfe0fa32844e322"
+    },
+    "tiger-public": {
+      "path": "assets/animal-tiger-public-1d6920ffae3c.glb",
+      "bytes": 106812,
+      "sha256": "1d6920ffae3cc64a655f41bdeaa9a978532e32018f02abc2a9d051dd6d548976"
     },
     "pig": {
       "path": "assets/animal-pig-bdf5e149a974.fbx",
