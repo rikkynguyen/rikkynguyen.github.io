@@ -1,15 +1,1 @@
-{
-  "commit": "657df7ae3677bd8aa4daf557c5ca0a1c855ad480",
-  "assets": {
-    "male": {
-      "path": "assets/male-7d201a8e93ff.glb",
-      "bytes": 20795240,
-      "sha256": "7d201a8e93ffb5e1b6289cffe12d5b3019bbc94e727e2890114a67aa03a12721"
-    },
-    "female": {
-      "path": "assets/female-adc532d90fc1.glb",
-      "bytes": 18922452,
-      "sha256": "adc532d90fc1403d916890bffdfd78f4cb23eb1b93135a4037a70b74e38f13d1"
-    }
-  }
-}
+{"commit":"ddbd25b026b0cb5b7a12ec214d4c0d2e3fd52680","branch":"main","kind":"gameplay"}
