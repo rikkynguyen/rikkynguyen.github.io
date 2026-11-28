@@ -1,5 +1,5 @@
 {
-  "commit": "f57e7da717d96244272db2751d3a1246cb6d54c7",
+  "commit": "7e37645d84d2dd48c98f6ba0d58d54b6d1bc5c23",
   "assets": {
     "male": {
       "path": "assets/male-7d201a8e93ff.glb",
@@ -14,9 +14,9 @@
   },
   "animals": {
     "buffalo": {
-      "path": "assets/animal-buffalo-717f388966e6.glb",
-      "bytes": 1863944,
-      "sha256": "717f388966e65b6828fc0738afc31e54766947ed8d975cd25e1f2347b550cd0e"
+      "path": "assets/animal-buffalo-aaecac7391da.glb",
+      "bytes": 1863948,
+      "sha256": "aaecac7391da66829a408ab2617833a988518ca9c8b8b2be2d5e8d45ee4c63f5"
     },
     "deer": {
       "path": "assets/animal-deer-c819bfedd307.glb",
