@@ -1,5 +1,5 @@
 {
-  "commit": "df6133190239fd5967056b3e65fe4ec01b6a71b4",
+  "commit": "035ef10060c6b09ef6d875a4cef3444080d4b921",
   "assets": {
     "male": {
       "path": "assets/male-7d201a8e93ff.glb",
@@ -10,6 +10,38 @@
       "path": "assets/female-adc532d90fc1.glb",
       "bytes": 18922452,
       "sha256": "adc532d90fc1403d916890bffdfd78f4cb23eb1b93135a4037a70b74e38f13d1"
+    }
+  },
+  "animals": {
+    "buffalo": {
+      "path": "assets/animal-buffalo-717f388966e6.glb",
+      "bytes": 1863944,
+      "sha256": "717f388966e65b6828fc0738afc31e54766947ed8d975cd25e1f2347b550cd0e"
+    },
+    "deer": {
+      "path": "assets/animal-deer-c819bfedd307.glb",
+      "bytes": 1954220,
+      "sha256": "c819bfedd307faab921fce81f784add692c21bcd47fb457af77fd90d0d26d857"
+    },
+    "stag": {
+      "path": "assets/animal-stag-484c3b7ba619.glb",
+      "bytes": 1995392,
+      "sha256": "484c3b7ba619ed9a224ad9f5a826ab84503176f356eabdadb4efdb1a12716de6"
+    },
+    "dog-candidate": {
+      "path": "assets/animal-dog-candidate-17cff7494619.glb",
+      "bytes": 1692652,
+      "sha256": "17cff7494619d6bec18609765c29ff6abe72e14b86eb70d5fc0cdaabfd53e6b8"
+    },
+    "horse": {
+      "path": "assets/animal-horse-65989ac24a70.glb",
+      "bytes": 2150992,
+      "sha256": "65989ac24a7056a1204dda2b21265611c2500ffa019a5722ecd3d0dbaf18c1a9"
+    },
+    "cow": {
+      "path": "assets/animal-cow-959f1ede5f6c.glb",
+      "bytes": 1867176,
+      "sha256": "959f1ede5f6c284ba2c47084d62bcdecd9d62f687de94939fcfe0fa32844e322"
     }
   }
 }
